@@ -6,5 +6,8 @@ layout: default
 <div class="wrapper {% cycle 'odd', 'even' %}">
     <h2 class="title" id="{{ section.title }}">{{ section.title }}</h2>
     <p>{{ section.content }}</p>
+    {% unless forloop.last %}
+    <img class="corner" src="{{ site.baseurl }}/images/{% cycle 'logo.png', 'ogol.png' %}" alt=""/>
+    {% endunless %}
 </div>
 {% endfor %}
