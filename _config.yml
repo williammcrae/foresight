@@ -1,0 +1,20 @@
+# Site settings
+title: "Foresight Engineering"
+email: info@foresightengineering.com.au
+subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+description: Sed vel libero at purus tincidunt porta.
+cover: cover.png
+logo: logo.png
+icon: icon.png
+company: "Foresight Engineering Pty Ltd"
+baseurl: "/foresight"
+url: "http://williammcrae.github.io"
+
+# Build settings
+markdown: kramdown
+
+include:     ['.htaccess']
+exclude:     ['vendor','Rakefile','Gemfile','Gemfile.lock','CNAME']
+
+collections:
+- sections

@@ -1,0 +1,10 @@
+---
+layout: default
+---
+
+{% for section in site.sections %}
+<div class="wrapper {% cycle 'odd', 'even' %}">
+    <h2 class="title" id="{{ section.title }}">{{ section.title }}</h2>
+    <p>{{ section.content }}</p>
+</div>
+{% endfor %}
