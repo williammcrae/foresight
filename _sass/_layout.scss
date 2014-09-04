@@ -2,8 +2,8 @@
  * Site header
  */
 .site-header {
-    border-top: 5px solid $grey-color-dark;
-    border-bottom: 1px solid $grey-color-light;
+    border-top: 5px solid $red-color-light;
+    border-bottom: 1px solid $red-color-light;
     min-height: 56px;
 
     // Positioning context for the mobile navigation icon
@@ -126,11 +126,33 @@
   width:         calc(45% - (#{$spacing-unit} / 2));
 }
 
+@include media-query($on-laptop) {
+  .wrapper-col-1,
+  .wrapper-col-2 {
+    width: -webkit-calc(50% - (#{$spacing-unit} / 2));
+    width:         calc(50% - (#{$spacing-unit} / 2));
+  }
+
+  .wrapper-col-3 {
+    width: -webkit-calc(100% - (#{$spacing-unit} / 2));
+    width:         calc(100% - (#{$spacing-unit} / 2));
+  }
+}
+
+@include media-query($on-palm) {
+  .wrapper-col {
+    float: none;
+    width: -webkit-calc(100% - (#{$spacing-unit} / 2));
+    width:         calc(100% - (#{$spacing-unit} / 2));
+  }
+}
+
+
 /**
  * Site footer
  */
 .site-footer {
-    border-top: 1px solid $grey-color-light;
+    border-top: 1px solid $red-color-light;
     padding: $spacing-unit 0;
 }
 
