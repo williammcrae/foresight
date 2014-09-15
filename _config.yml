@@ -17,5 +17,3 @@ markdown: kramdown
 include:     ['.htaccess']
 exclude:     ['vendor','Rakefile','Gemfile','Gemfile.lock','CNAME']
 
-collections:
-- sections
