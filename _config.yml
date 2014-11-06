@@ -8,7 +8,7 @@ logo: logo.png
 ogol: ogol.png
 icon: icon.png
 company: "Foresight Engineering Pty Ltd"
-baseurl: "/foresight"
+#baseurl: "/foresight"
 url: "http://williammcrae.github.io"
 
 # Build settings
@@ -16,4 +16,7 @@ markdown: kramdown
 
 include:     ['.htaccess']
 exclude:     ['vendor','Rakefile','Gemfile','Gemfile.lock','CNAME']
+
+collections:
+- services
 

@@ -3,12 +3,10 @@ layout: default
 weight : 0
 ---
 
-{% for section in site.sections %}
-<div class="wrapper {% cycle 'odd', 'even' %}">
-    <h2 class="title" id="{{ section.title }}">{{ section.title }}</h2>
-    <p>{{ section.content }}</p>
-    {% unless forloop.last %}
-    <img class="corner" src="{{ site.baseurl }}/images/{% cycle 'logo.png', 'ogol.png' %}" alt=""/>
-    {% endunless %}
+<div class="wrapper">
+    ...
 </div>
-{% endfor %}
+
+<div class="wrapper">
+    <img class="corner" src="{{ site.baseurl }}/images/logo.png" alt=""/>
+</div>

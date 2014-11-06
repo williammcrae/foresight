@@ -8,11 +8,8 @@
     {% include header.html %}
 
     <div class="page-content">
-        <div class="wrapper">
-            <h2 class="title">{{ page.title }}</h2>
-            <p>{{ page.content }}</p>
-            <img class="corner" src="{{ site.baseurl }}/images/logo.png" alt=""/>
-        </div>
+        <h1 class="title wrapper">{{ page.title }}</h1>
+        {{ content }}
     </div>
 
     {% include footer.html %}
@@ -20,3 +17,5 @@
   </body>
 
 </html>
+
+
