@@ -3,10 +3,10 @@ title: "Foresight Engineering"
 email: info@foresightengineering.com.au
 subtitle: ""
 description: Practical, reliable and efficient engineering solutions
-cover: cover.png
-logo: logo.png
-ogol: ogol.png
-icon: icon.png
+#cover: cover.png
+#logo: logo.png
+#ogol: ogol.png
+#icon: icon.png
 company: "Foresight Engineering Pty Ltd"
 #baseurl: "/foresight"
 url: "http://williammcrae.github.io"
@@ -20,3 +20,14 @@ exclude:     ['vendor','Rakefile','Gemfile','Gemfile.lock','CNAME']
 collections:
 - services
 
+#
+# jekyll-assets: see more at https://github.com/ixti/jekyll-assets
+#
+assets:
+
+  dirname: assets
+  baseurl: /assets/
+  sources:
+    - _assets/javascripts
+    - _assets/stylesheets
+    - _assets/images

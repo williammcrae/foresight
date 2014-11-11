@@ -13,7 +13,9 @@ weight: 20
     <div class="wrapper {% cycle 'even', 'odd' %}">
         <h2 class="title" id="{{ service.title }}">{{ service.title }}</h2>
         <p>{{ service.content }}</p>
-        <img class="corner" src="{{ site.baseurl }}/images/{% cycle 'ogol.png', 'logo.png' %}" alt=""/>
+        <!--<img class="corner" src="{{ site.baseurl }}/images/{% cycle 'ogol.png', 'logo.png' %}" alt=""/>-->
+        {% image ogol.png class="corner even" %}
+        {% image logo.png class="corner odd" %}
     </div>
 {% endfor %}
 <p></p>

@@ -262,3 +262,32 @@
   margin-right: -30px;
   float:right;
 }
+
+.clients {
+  .client-image {
+    display: inline-block;
+    width: -webkit-calc(20% - (#{$spacing-unit} / 2));
+    width:         calc(20% - (#{$spacing-unit} / 2));
+    margin-bottom: $spacing-unit;
+    padding: 5px;
+
+    @include media-query($on-palm) {
+      width: -webkit-calc(100% - (#{$spacing-unit} / 2));
+      width:         calc(100% - (#{$spacing-unit} / 2));
+    }
+  }
+}
+
+
+
+.odd {
+  .even {
+    display: none;
+  }
+}
+
+.even {
+  .odd {
+    display: none;
+  }
+}

@@ -1,7 +1,9 @@
 <header class="site-header">
 
   <div class="wrapper">
-    <a class="site-title" href="{{ site.baseurl }}" alt="{{ site.title }}"><img src="{{ site.baseurl }}/images/lodo.png"/></a>
+    <a class="site-title" href="{{ site.baseurl }}" alt="{{ site.title }}">
+        {% image lodo.png %}
+    </a>
 
     <nav class="site-nav">
       <a href="#" class="menu-icon">
@@ -24,7 +26,7 @@
 
   </div>
     <div class="wrapper">
-        <img src="{{ site.baseurl }}/images/{{ site.cover }}"/>
+        {% image cover.png %}
     </div>
 
 </header>
