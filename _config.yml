@@ -8,17 +8,18 @@ description: Practical, reliable and efficient engineering solutions
 #ogol: ogol.png
 #icon: icon.png
 company: "Foresight Engineering Pty Ltd"
-#baseurl: "/foresight"
+baseurl: "/foresight"
 url: "http://williammcrae.github.io"
 
 # Build settings
 markdown: kramdown
 
 include:     ['.htaccess']
-exclude:     ['vendor','Rakefile','Gemfile','Gemfile.lock','CNAME']
+exclude:     ['vendor','Rakefile','Gemfile','Gemfile.lock','CNAME', 'projects.html']
 
 collections:
 - services
+- personnel
 
 #
 # jekyll-assets: see more at https://github.com/ixti/jekyll-assets
@@ -26,7 +27,7 @@ collections:
 assets:
 
   dirname: assets
-  baseurl: /assets/
+  baseurl: /foresight/assets/
   sources:
     - _assets/javascripts
     - _assets/stylesheets

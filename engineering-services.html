@@ -5,7 +5,7 @@ weight: 20
 ---
 
 <div class="wrapper">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p>Our range of engineering services.</p>
 </div>
 
 {% assign sorted_services = (site.services | sort: 'weight') %}
@@ -13,7 +13,6 @@ weight: 20
     <div class="wrapper {% cycle 'even', 'odd' %}">
         <h2 class="title" id="{{ service.title }}">{{ service.title }}</h2>
         <p>{{ service.content }}</p>
-        <!--<img class="corner" src="{{ site.baseurl }}/images/{% cycle 'ogol.png', 'logo.png' %}" alt=""/>-->
         {% image ogol.png class="corner even" %}
         {% image logo.png class="corner odd" %}
     </div>

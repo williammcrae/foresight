@@ -263,6 +263,12 @@
   float:right;
 }
 
+.home {
+  .corner {
+    margin-right: 0px;
+  }
+}
+
 .clients {
   .client-image {
     display: inline-block;
