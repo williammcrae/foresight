@@ -27,7 +27,7 @@ collections:
 assets:
 
   dirname: assets
-  baseurl: /foresight/assets/
+  baseurl: /assets/
   sources:
     - _assets/javascripts
     - _assets/stylesheets

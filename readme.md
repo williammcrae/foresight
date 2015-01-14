@@ -3,3 +3,4 @@ Deployment notes:
 
 Local:
 @bundle exec jekyll serve --watch@
+@bundle exec jekyll build@
